@@ -55,8 +55,12 @@ describe('começando o curso de cypress básico', () => {
      });
 
      it.only('fazendo upload de um arquivo', () => {
-          cy.get('#file-upload').selectFile('C:\\Users\\User\\Downloads\\Nereu Nogueira-CV2024.pdf')
-          cy.selectFile('cypress/fixtures/Nereu Nogueira-CV2024.pdf');
+          // cy.get('#file-upload').selectFile('C:\\Users\\User\\Downloads\\Nereu Nogueira-CV2024.pdf')
+          // cy.selectFile('cypress/fixtures/Nereu Nogueira-CV2024.pdf');
+          // Supondo que você está testando um upload de arquivo
+          cy.fixture('Nereu Nogueira-CV2024.pdf').as('pdfFile');
+          cy.get('input[type="file"]').attachFile('@pdfFile');
+
 
      });
 

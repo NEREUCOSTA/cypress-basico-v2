@@ -56,6 +56,8 @@ describe('começando o curso de cypress básico', () => {
 
      it.only('fazendo upload de um arquivo', () => {
           cy.get('#file-upload').selectFile('C:\\Users\\User\\Downloads\\Nereu Nogueira-CV2024.pdf')
+          cy.selectFile('cypress/fixtures/Nereu Nogueira-CV2024.pdf');
+
      });
 
 });

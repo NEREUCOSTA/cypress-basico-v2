@@ -22,6 +22,7 @@
   "license": "MIT",
   "homepage": "https://github.com/wlsf82/cypress-basico-v2#readme",
   "dependencies": {
+    "curso-cypress-v2": "file:",
     "cypress": "^13.0.0"
   },
   "devDependencies": {
